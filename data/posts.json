@@ -1,0 +1,141 @@
+[
+  {
+    "id": "1",
+    "title": "Getting Started with Next.js App Router",
+    "slug": "getting-started-nextjs-app-router",
+    "excerpt": "A practical introduction to routing, layouts, and data flow with App Router.",
+    "content": "Next.js App Router helps you compose pages with layouts and nested routes.\n\nIn this sample post, we focus on server components, file-based routing, and reusable UI patterns.",
+    "coverImage": "/next.svg",
+    "author": {
+      "id": "a1",
+      "name": "Alex Carter",
+      "avatar": "/vercel.svg",
+      "bio": "Frontend engineer focused on React and performance."
+    },
+    "category": {
+      "id": "c1",
+      "name": "Tutorial",
+      "slug": "tutorial",
+      "description": "Hands-on implementation guides."
+    },
+    "publishedAt": "2026-03-28T09:00:00.000Z",
+    "tags": ["nextjs", "app-router", "routing"],
+    "readingTime": 6
+  },
+  {
+    "id": "2",
+    "title": "Server Components vs Client Components",
+    "slug": "server-vs-client-components",
+    "excerpt": "Learn where each component type fits and how to avoid hydration issues.",
+    "content": "Server components are ideal for data-heavy rendering.\n\nClient components handle interaction and local state.",
+    "coverImage": "/next.svg",
+    "author": {
+      "id": "a2",
+      "name": "Maya Lopez",
+      "avatar": "/vercel.svg",
+      "bio": "Builds developer tooling and teaching materials."
+    },
+    "category": {
+      "id": "c2",
+      "name": "Concepts",
+      "slug": "concepts",
+      "description": "Core mental models for Next.js."
+    },
+    "publishedAt": "2026-03-25T13:20:00.000Z",
+    "tags": ["nextjs", "server-components", "client-components"],
+    "readingTime": 8
+  },
+  {
+    "id": "3",
+    "title": "Building Dynamic Blog Routes",
+    "slug": "building-dynamic-blog-routes",
+    "excerpt": "Implement [slug] routes and not-found handling the safe way.",
+    "content": "Dynamic segments let you map content by slug.\n\nAlways include fallback handling when data is missing.",
+    "coverImage": "/next.svg",
+    "author": {
+      "id": "a1",
+      "name": "Alex Carter",
+      "avatar": "/vercel.svg",
+      "bio": "Frontend engineer focused on React and performance."
+    },
+    "category": {
+      "id": "c1",
+      "name": "Tutorial",
+      "slug": "tutorial",
+      "description": "Hands-on implementation guides."
+    },
+    "publishedAt": "2026-03-21T08:45:00.000Z",
+    "tags": ["routing", "dynamic-routes"],
+    "readingTime": 5
+  },
+  {
+    "id": "4",
+    "title": "Contact Form Validation with Zod",
+    "slug": "contact-form-validation-with-zod",
+    "excerpt": "Validate user input with shared schemas for both UI and API route.",
+    "content": "Schema-driven validation reduces mismatch between frontend and backend.\n\nReact Hook Form works well with Zod resolver for consistent errors.",
+    "coverImage": "/next.svg",
+    "author": {
+      "id": "a3",
+      "name": "Ivy Nguyen",
+      "avatar": "/vercel.svg",
+      "bio": "Teaches frontend architecture and form design."
+    },
+    "category": {
+      "id": "c3",
+      "name": "Forms",
+      "slug": "forms",
+      "description": "Form UX and validation patterns."
+    },
+    "publishedAt": "2026-03-18T11:10:00.000Z",
+    "tags": ["forms", "zod", "react-hook-form"],
+    "readingTime": 7
+  },
+  {
+    "id": "5",
+    "title": "Search and Filter in App Router",
+    "slug": "search-and-filter-in-app-router",
+    "excerpt": "Keep filters in URL params so users can share and revisit state.",
+    "content": "URL-driven search makes state linkable and browser-history friendly.\n\nDebounce input updates to avoid noisy navigation.",
+    "coverImage": "/next.svg",
+    "author": {
+      "id": "a2",
+      "name": "Maya Lopez",
+      "avatar": "/vercel.svg",
+      "bio": "Builds developer tooling and teaching materials."
+    },
+    "category": {
+      "id": "c4",
+      "name": "Advanced",
+      "slug": "advanced",
+      "description": "Production-ready implementation details."
+    },
+    "publishedAt": "2026-03-15T16:05:00.000Z",
+    "tags": ["search", "url-params", "ux"],
+    "readingTime": 6
+  },
+  {
+    "id": "6",
+    "title": "Data Fetching Patterns for Blog Pages",
+    "slug": "data-fetching-patterns-for-blog-pages",
+    "excerpt": "Pick SSR, static generation, or client fetching by page behavior.",
+    "content": "Rendering strategy should follow data freshness and interaction needs.\n\nUse server fetching for initial content and client fetching for dynamic interactions.",
+    "coverImage": "/next.svg",
+    "author": {
+      "id": "a3",
+      "name": "Ivy Nguyen",
+      "avatar": "/vercel.svg",
+      "bio": "Teaches frontend architecture and form design."
+    },
+    "category": {
+      "id": "c4",
+      "name": "Advanced",
+      "slug": "advanced",
+      "description": "Production-ready implementation details."
+    },
+    "publishedAt": "2026-03-10T07:30:00.000Z",
+    "tags": ["data-fetching", "ssr", "csr"],
+    "readingTime": 9
+  }
+]
+
