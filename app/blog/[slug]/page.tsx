@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { format } from "date-fns";
 import { notFound } from "next/navigation";
-import CommentForm from "@/components/forms/CommentForm";
 import PostContent from "@/components/blog/PostContent";
-import { getPostBySlug } from "@/lib/api";
+import { getAllPosts, getPostBySlug } from "@/lib/api";
 
 interface BlogDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -30,6 +29,11 @@ export async function generateMetadata({
 
 export const revalidate = 3600;
 
+export async function generateStaticParams() {
+  const posts = await getAllPosts();
+  return posts.map((post) => ({ slug: post.slug }));
+}
+
 export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
@@ -45,11 +49,11 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
         <p className="max-w-3xl text-lg text-slate-700">{post.excerpt}</p>
         <div className="text-sm text-slate-500">
           <span>{post.author.name}</span>
-          <span className="mx-2">•</span>
+          <span className="mx-2">|</span>
           <time dateTime={post.publishedAt}>
             {format(new Date(post.publishedAt), "MMMM d, yyyy")}
           </time>
-          <span className="mx-2">•</span>
+          <span className="mx-2">|</span>
           <span>{post.readingTime} min read</span>
         </div>
       </header>
@@ -57,8 +61,6 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
       <section className="rounded-xl border border-slate-200 bg-white p-6">
         <PostContent content={post.content} />
       </section>
-
-      <CommentForm postId={post.id} />
     </article>
   );
 }

@@ -3,6 +3,7 @@ import { Lora, Manrope } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import "./globals.css";
 
 const headingFont = Lora({
@@ -16,9 +17,10 @@ const bodyFont = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "NextJS Blog Learning Platform",
-    template: "%s | NextJS Blog Learning Platform",
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
   },
   description:
     "Demo blog app for learning App Router, data fetching, and form validation.",

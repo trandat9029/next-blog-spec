@@ -11,10 +11,10 @@ interface BlogPageProps {
 }
 
 function buildCategoryHref(category: string, search?: string) {
+  if (!search) return `/blog/category/${category}`;
   const params = new URLSearchParams();
-  params.set("category", category);
-  if (search) params.set("search", search);
-  return `/blog?${params.toString()}`;
+  params.set("search", search);
+  return `/blog/category/${category}?${params.toString()}`;
 }
 
 function buildAllHref(search?: string) {
@@ -72,4 +72,3 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     </div>
   );
 }
-
