@@ -29,7 +29,7 @@ export default function CommentForm({ postId }: CommentFormProps) {
 
   const onSubmit = async (values: CommentInput) => {
     await new Promise((resolve) => setTimeout(resolve, 350));
-    toast.success(`Comment queued for post ${postId}`);
+    toast.success(`Bình luận của bạn đã được ghi nhận cho bài ${postId}.`);
     reset();
     void values;
   };
@@ -40,31 +40,37 @@ export default function CommentForm({ postId }: CommentFormProps) {
       className="space-y-3 rounded-xl border border-slate-200 bg-white p-4"
       noValidate
     >
-      <h3 className="font-serif text-lg font-semibold text-slate-900">Leave a comment</h3>
+      <h3 className="font-heading text-lg font-semibold text-slate-900">
+        Để lại bình luận
+      </h3>
 
       <div>
-        <Input placeholder="Your name" {...register("author")} />
+        <Input placeholder="Tên của bạn" {...register("author")} />
         {errors.author ? (
           <p className="mt-1 text-sm text-rose-600">{errors.author.message}</p>
         ) : null}
       </div>
 
       <div>
-        <Input type="email" placeholder="Your email" {...register("email")} />
+        <Input type="email" placeholder="Email của bạn" {...register("email")} />
         {errors.email ? (
           <p className="mt-1 text-sm text-rose-600">{errors.email.message}</p>
         ) : null}
       </div>
 
       <div>
-        <Textarea rows={4} placeholder="Add your comment" {...register("content")} />
+        <Textarea
+          rows={4}
+          placeholder="Viết bình luận của bạn"
+          {...register("content")}
+        />
         {errors.content ? (
           <p className="mt-1 text-sm text-rose-600">{errors.content.message}</p>
         ) : null}
       </div>
 
       <Button type="submit" disabled={isSubmitting}>
-        {isSubmitting ? "Posting..." : "Post comment"}
+        {isSubmitting ? "Đang gửi..." : "Gửi bình luận"}
       </Button>
     </form>
   );

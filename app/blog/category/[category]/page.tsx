@@ -14,8 +14,8 @@ export async function generateMetadata({
 }: CategoryPageProps): Promise<Metadata> {
   const { category } = await params;
   return {
-    title: `Category: ${category}`,
-    description: `Posts filtered by ${category} category.`,
+    title: `Chủ đề: ${category}`,
+    description: `Những bài viết âm nhạc thuộc chủ đề ${category}.`,
   };
 }
 
@@ -43,10 +43,10 @@ export default async function CategoryPage({
     <div className="space-y-6">
       <header className="space-y-2">
         <h1 className="text-3xl font-semibold text-slate-900">
-          Category: {selected?.name ?? category}
+          Chủ đề: {selected?.name ?? category}
         </h1>
         <p className="text-slate-700">
-          Browse all posts under this category.
+          Khám phá các bài viết trong cùng một mạch chủ đề.
         </p>
       </header>
 
@@ -57,7 +57,7 @@ export default async function CategoryPage({
           href={withSearch("/blog", search)}
           className="rounded-full bg-slate-100 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-200"
         >
-          All posts
+          Tất cả bài viết
         </Link>
         {categories.map((item) => (
           <Link

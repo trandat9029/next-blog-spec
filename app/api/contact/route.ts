@@ -12,14 +12,14 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      message: "Thanks for your message. We will get back to you soon.",
+      message: "Cảm ơn bạn đã nhắn tin. Chúng tôi sẽ phản hồi sớm.",
     });
   } catch (error) {
     if (error instanceof ZodError) {
       return NextResponse.json(
         {
           success: false,
-          message: "Validation failed",
+          message: "Dữ liệu chưa hợp lệ",
           errors: error.issues.map((issue) => ({ message: issue.message })),
         },
         { status: 400 },
@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         success: false,
-        message: "Unexpected server error",
+        message: "Đã xảy ra lỗi máy chủ",
       },
       { status: 500 },
     );

@@ -3,29 +3,29 @@ import { z } from "zod";
 export const contactSchema = z.object({
   name: z
     .string()
-    .min(2, "Name must contain at least 2 characters")
-    .max(50, "Name cannot exceed 50 characters"),
-  email: z.string().email("Email format is invalid"),
+    .min(2, "Họ tên phải có ít nhất 2 ký tự")
+    .max(50, "Họ tên không được vượt quá 50 ký tự"),
+  email: z.string().email("Email không đúng định dạng"),
   subject: z
     .string()
-    .min(5, "Subject must contain at least 5 characters")
-    .max(100, "Subject cannot exceed 100 characters"),
+    .min(5, "Chủ đề phải có ít nhất 5 ký tự")
+    .max(100, "Chủ đề không được vượt quá 100 ký tự"),
   message: z
     .string()
-    .min(10, "Message must contain at least 10 characters")
-    .max(1000, "Message cannot exceed 1000 characters"),
+    .min(10, "Nội dung phải có ít nhất 10 ký tự")
+    .max(1000, "Nội dung không được vượt quá 1000 ký tự"),
 });
 
 export const commentSchema = z.object({
   author: z
     .string()
-    .min(2, "Author name must contain at least 2 characters")
-    .max(50, "Author name cannot exceed 50 characters"),
-  email: z.string().email("Email format is invalid"),
+    .min(2, "Tên hiển thị phải có ít nhất 2 ký tự")
+    .max(50, "Tên hiển thị không được vượt quá 50 ký tự"),
+  email: z.string().email("Email không đúng định dạng"),
   content: z
     .string()
-    .min(5, "Comment must contain at least 5 characters")
-    .max(500, "Comment cannot exceed 500 characters"),
+    .min(5, "Bình luận phải có ít nhất 5 ký tự")
+    .max(500, "Bình luận không được vượt quá 500 ký tự"),
 });
 
 export type ContactInput = z.infer<typeof contactSchema>;

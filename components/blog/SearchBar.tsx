@@ -38,7 +38,7 @@ export default function SearchBar() {
         className="pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 text-slate-400"
       />
       <Input
-        placeholder="Search by title, excerpt, or tag..."
+        placeholder="Tìm theo tiêu đề, mô tả hoặc thẻ..."
         value={value}
         onChange={(event) => setValue(event.target.value)}
         className="pr-10 pl-9"
@@ -48,7 +48,7 @@ export default function SearchBar() {
           type="button"
           onClick={() => setValue("")}
           className="absolute top-1/2 right-3 -translate-y-1/2 text-slate-400 hover:text-slate-700"
-          aria-label="Clear search"
+          aria-label="Xóa tìm kiếm"
         >
           <X size={16} />
         </button>

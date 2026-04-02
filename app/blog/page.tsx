@@ -34,9 +34,9 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   return (
     <div className="space-y-6">
       <header className="space-y-2">
-        <h1 className="text-3xl font-semibold text-slate-900">Blog</h1>
+        <h1 className="text-3xl font-semibold text-slate-900">Bài viết âm nhạc</h1>
         <p className="text-slate-700">
-          Browse all posts. Filter by category and search by keyword.
+          Khám phá bài viết theo chủ đề và tìm nhanh bằng từ khóa.
         </p>
       </header>
 
@@ -51,7 +51,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
               : "bg-slate-100 text-slate-700 hover:bg-slate-200"
           }`}
         >
-          All
+          Tất cả
         </Link>
         {categories.map((item) => (
           <Link

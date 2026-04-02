@@ -16,12 +16,12 @@ export default function RootError({
 
   return (
     <div className="rounded-xl border border-rose-200 bg-rose-50 p-6 text-rose-800">
-      <h2 className="text-xl font-semibold">Unexpected application error</h2>
+      <h2 className="text-xl font-semibold">Ứng dụng gặp lỗi ngoài mong đợi</h2>
       <p className="mt-2 text-sm">
-        Please retry. If this keeps happening, inspect logs and route handlers.
+        Vui lòng thử lại. Nếu lỗi lặp lại, hãy kiểm tra log và route handler.
       </p>
       <Button className="mt-4" onClick={reset}>
-        Retry
+        Thử lại
       </Button>
     </div>
   );

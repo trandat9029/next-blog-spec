@@ -16,12 +16,12 @@ export default function BlogError({
 
   return (
     <div className="rounded-xl border border-rose-200 bg-rose-50 p-6 text-rose-800">
-      <h2 className="text-xl font-semibold">Unable to load blog page</h2>
+      <h2 className="text-xl font-semibold">Không thể tải trang bài viết</h2>
       <p className="mt-2 text-sm">
-        Please try again. If the issue persists, inspect server logs.
+        Vui lòng thử lại. Nếu lỗi tiếp tục xảy ra, hãy kiểm tra log máy chủ.
       </p>
       <Button className="mt-4" onClick={reset}>
-        Retry
+        Thử lại
       </Button>
     </div>
   );

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { format } from "date-fns";
+import { vi } from "date-fns/locale";
 import { notFound } from "next/navigation";
 import PostContent from "@/components/blog/PostContent";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
@@ -16,8 +17,8 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Post not found",
-      description: "The requested post does not exist.",
+      title: "Không tìm thấy bài viết",
+      description: "Bài viết bạn yêu cầu không tồn tại.",
     };
   }
 
@@ -51,10 +52,10 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
           <span>{post.author.name}</span>
           <span className="mx-2">|</span>
           <time dateTime={post.publishedAt}>
-            {format(new Date(post.publishedAt), "MMMM d, yyyy")}
+            {format(new Date(post.publishedAt), "d MMMM yyyy", { locale: vi })}
           </time>
           <span className="mx-2">|</span>
-          <span>{post.readingTime} min read</span>
+          <span>{post.readingTime} phút đọc</span>
         </div>
       </header>
 

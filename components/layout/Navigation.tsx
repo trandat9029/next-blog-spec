@@ -5,17 +5,17 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Blog", href: "/blog" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Trang chủ", href: "/" },
+  { label: "Bài viết", href: "/blog" },
+  { label: "Giới thiệu", href: "/about" },
+  { label: "Liên hệ", href: "/contact" },
 ];
 
 export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav aria-label="Main navigation">
+    <nav aria-label="Điều hướng chính">
       <ul className="flex flex-wrap gap-2">
         {navItems.map((item) => {
           const isActive =

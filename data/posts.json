@@ -1,141 +1,140 @@
 [
   {
     "id": "1",
-    "title": "Getting Started with Next.js App Router",
-    "slug": "getting-started-nextjs-app-router",
-    "excerpt": "A practical introduction to routing, layouts, and data flow with App Router.",
-    "content": "Next.js App Router helps you compose pages with layouts and nested routes.\n\nIn this sample post, we focus on server components, file-based routing, and reusable UI patterns.",
-    "coverImage": "/next.svg",
+    "title": "Nhạc Indie Đang Định Hình Thị Hiếu Nghe 2026",
+    "slug": "nhac-indie-dang-dinh-hinh-thi-hieu-nghe-2026",
+    "excerpt": "Một góc nhìn về cách nghệ sĩ độc lập xây dựng cộng đồng và tạo xu hướng mới.",
+    "content": "Làn sóng indie không còn là không gian nhỏ hẹp dành cho một nhóm khán giả trung thành.\n\nTrong 2026, nhiều nghệ sĩ độc lập đang tự xuất bản, tự booking show nhỏ, đến việc kêu gọi fan đồng hành qua những buổi nghe thân mật.\n\nĐiều quan trọng không chỉ là âm thanh lạ, mà là cách họ tạo ra một bản sắc rõ ràng và giữ được sự gắn kết lâu dài với người nghe.",
+    "coverImage": "/music/cover-indie.svg",
     "author": {
       "id": "a1",
-      "name": "Alex Carter",
-      "avatar": "/vercel.svg",
-      "bio": "Frontend engineer focused on React and performance."
+      "name": "Linh Trần",
+      "avatar": "/music/avatar-linh.svg",
+      "bio": "Theo dõi indie, live session và văn hóa nghe nhạc đô thị."
     },
     "category": {
       "id": "c1",
-      "name": "Tutorial",
-      "slug": "tutorial",
-      "description": "Hands-on implementation guides."
+      "name": "Indie",
+      "slug": "indie",
+      "description": "Những câu chuyện về nghệ sĩ độc lập và âm thanh mới."
     },
     "publishedAt": "2026-03-28T09:00:00.000Z",
-    "tags": ["nextjs", "app-router", "routing"],
+    "tags": ["indie", "artist", "trend"],
     "readingTime": 6
   },
   {
     "id": "2",
-    "title": "Server Components vs Client Components",
-    "slug": "server-vs-client-components",
-    "excerpt": "Learn where each component type fits and how to avoid hydration issues.",
-    "content": "Server components are ideal for data-heavy rendering.\n\nClient components handle interaction and local state.",
-    "coverImage": "/next.svg",
+    "title": "Playlist Buổi Tối Cho Những Ngày Cần Chậm Lại",
+    "slug": "playlist-buoi-toi-cho-nhung-ngay-can-cham-lai",
+    "excerpt": "Những bản nhạc nhẹ, mở và đủ khoảng trống để bạn thư giãn sau một ngày dài.",
+    "content": "Một playlist buổi tối hay không cần quá nhiều thử thách.\n\nBạn có thể bắt đầu với dream pop, thêm một chút lo-fi soul, rồi kết thúc bằng acoustic tối giản.\n\nĐiều làm playlist này có sức hút nằm ở nhịp độ vừa phải, giọng hát không ép cảm xúc, và khả năng tạo ra một không khí yên mà không buồn.",
+    "coverImage": "/music/cover-playlist.svg",
     "author": {
       "id": "a2",
-      "name": "Maya Lopez",
-      "avatar": "/vercel.svg",
-      "bio": "Builds developer tooling and teaching materials."
+      "name": "Minh Hoàng",
+      "avatar": "/music/avatar-minh.svg",
+      "bio": "Biên tập playlist và viết về trải nghiệm nghe nhạc hằng ngày."
     },
     "category": {
       "id": "c2",
-      "name": "Concepts",
-      "slug": "concepts",
-      "description": "Core mental models for Next.js."
+      "name": "Playlist",
+      "slug": "playlist",
+      "description": "Gợi ý nghe nhạc theo tâm trạng, thời điểm và không gian."
     },
     "publishedAt": "2026-03-25T13:20:00.000Z",
-    "tags": ["nextjs", "server-components", "client-components"],
-    "readingTime": 8
-  },
-  {
-    "id": "3",
-    "title": "Building Dynamic Blog Routes",
-    "slug": "building-dynamic-blog-routes",
-    "excerpt": "Implement [slug] routes and not-found handling the safe way.",
-    "content": "Dynamic segments let you map content by slug.\n\nAlways include fallback handling when data is missing.",
-    "coverImage": "/next.svg",
-    "author": {
-      "id": "a1",
-      "name": "Alex Carter",
-      "avatar": "/vercel.svg",
-      "bio": "Frontend engineer focused on React and performance."
-    },
-    "category": {
-      "id": "c1",
-      "name": "Tutorial",
-      "slug": "tutorial",
-      "description": "Hands-on implementation guides."
-    },
-    "publishedAt": "2026-03-21T08:45:00.000Z",
-    "tags": ["routing", "dynamic-routes"],
+    "tags": ["playlist", "chill", "evening"],
     "readingTime": 5
   },
   {
-    "id": "4",
-    "title": "Contact Form Validation with Zod",
-    "slug": "contact-form-validation-with-zod",
-    "excerpt": "Validate user input with shared schemas for both UI and API route.",
-    "content": "Schema-driven validation reduces mismatch between frontend and backend.\n\nReact Hook Form works well with Zod resolver for consistent errors.",
-    "coverImage": "/next.svg",
+    "id": "3",
+    "title": "Vì Sao Live Session Nhỏ Đang Được Yêu Thích Trở Lại",
+    "slug": "vi-sao-live-session-nho-dang-duoc-yeu-thich-tro-lai",
+    "excerpt": "Không cần sân khấu lớn, live session vẫn có thể tạo ra khoảnh khắc rất thật.",
+    "content": "Sau một thời gian dài ưu tiên clip ngắn và các bản thu âm chỉn chuốt, live session nhỏ đang quay trở lại.\n\nNgười nghe muốn thấy hơi thở, lời hát có chút xước nhịp, và sự tự nhiên trong cách nhạc công phối hợp.\n\nVới nghệ sĩ, đây cũng là cách tốt để giới thiệu bản phối mới mà vẫn giữ được cảm giác gần gũi.",
+    "coverImage": "/music/cover-live.svg",
     "author": {
-      "id": "a3",
-      "name": "Ivy Nguyen",
-      "avatar": "/vercel.svg",
-      "bio": "Teaches frontend architecture and form design."
+      "id": "a1",
+      "name": "Linh Trần",
+      "avatar": "/music/avatar-linh.svg",
+      "bio": "Theo dõi indie, live session và văn hóa nghe nhạc đô thị."
     },
     "category": {
       "id": "c3",
-      "name": "Forms",
-      "slug": "forms",
-      "description": "Form UX and validation patterns."
+      "name": "Trực tiếp",
+      "slug": "live",
+      "description": "Sân khấu nhỏ, live session và văn hóa biểu diễn trực tiếp."
     },
-    "publishedAt": "2026-03-18T11:10:00.000Z",
-    "tags": ["forms", "zod", "react-hook-form"],
+    "publishedAt": "2026-03-21T08:45:00.000Z",
+    "tags": ["live", "session", "performance"],
     "readingTime": 7
   },
   {
-    "id": "5",
-    "title": "Search and Filter in App Router",
-    "slug": "search-and-filter-in-app-router",
-    "excerpt": "Keep filters in URL params so users can share and revisit state.",
-    "content": "URL-driven search makes state linkable and browser-history friendly.\n\nDebounce input updates to avoid noisy navigation.",
-    "coverImage": "/next.svg",
+    "id": "4",
+    "title": "Một Album Pop Tốt Cần Gì Ngoài Giai Điệu Bắt Tai",
+    "slug": "mot-album-pop-tot-can-gi-ngoai-giai-dieu-bat-tai",
+    "excerpt": "Pop vẫn cần hook mạnh, nhưng cấu trúc và tính cách album mới là điều giữ người nghe ở lại.",
+    "content": "Khi nói về pop, mọi người thường nghĩ ngay đến điểm rơi bắt tai.\n\nNhưng một album pop thuyết phục cần thêm nhiều lớp: trình tự bài hát hợp lý, sản xuất có điểm nhấn, và một chủ đề xuyên suốt đủ để nhận ra.\n\nKhi những yếu tố đó gặp nhau, album không chỉ để nghe một lần mà còn để quay lại vào nhiều tâm trạng khác nhau.",
+    "coverImage": "/music/cover-review.svg",
     "author": {
-      "id": "a2",
-      "name": "Maya Lopez",
-      "avatar": "/vercel.svg",
-      "bio": "Builds developer tooling and teaching materials."
+      "id": "a3",
+      "name": "Thảo Nguyễn",
+      "avatar": "/music/avatar-thao.svg",
+      "bio": "Viết review album và theo dõi xu hướng pop châu Á."
     },
     "category": {
       "id": "c4",
-      "name": "Advanced",
-      "slug": "advanced",
-      "description": "Production-ready implementation details."
+      "name": "Đánh giá",
+      "slug": "review",
+      "description": "Review album, EP và những bản phát hành đáng chú ý."
+    },
+    "publishedAt": "2026-03-18T11:10:00.000Z",
+    "tags": ["pop", "album", "review"],
+    "readingTime": 8
+  },
+  {
+    "id": "5",
+    "title": "3 Xu Hướng Sản Xuất Đang Làm Nhạc Điện Tử Mềm Hơn",
+    "slug": "3-xu-huong-san-xuat-dang-lam-nhac-dien-tu-mem-hon",
+    "excerpt": "Từ texture analog đến rhythm nhẹ, nhạc điện tử gần đây đang dễ tiếp cận hơn với đại chúng.",
+    "content": "Nhạc điện tử 2026 không chỉ chạy theo sự bùng nổ và tốc độ cao.\n\nRất nhiều producer đang nghiêng sang texture ấm, lớp synth mờ, và bộ gõ tiết chế để bài hát có thêm khoảng thở.\n\nKết quả là nhiều track vẫn hiện đại, vẫn tinh tế, nhưng dễ nghe hơn trong bối cảnh cả ở nhà lẫn quán cà phê.",
+    "coverImage": "/music/cover-production.svg",
+    "author": {
+      "id": "a2",
+      "name": "Minh Hoàng",
+      "avatar": "/music/avatar-minh.svg",
+      "bio": "Biên tập playlist và viết về trải nghiệm nghe nhạc hằng ngày."
+    },
+    "category": {
+      "id": "c5",
+      "name": "Sản xuất",
+      "slug": "production",
+      "description": "Kỹ thuật sản xuất, phối khí và cách âm thanh được tạo ra."
     },
     "publishedAt": "2026-03-15T16:05:00.000Z",
-    "tags": ["search", "url-params", "ux"],
+    "tags": ["electronic", "production", "sound"],
     "readingTime": 6
   },
   {
     "id": "6",
-    "title": "Data Fetching Patterns for Blog Pages",
-    "slug": "data-fetching-patterns-for-blog-pages",
-    "excerpt": "Pick SSR, static generation, or client fetching by page behavior.",
-    "content": "Rendering strategy should follow data freshness and interaction needs.\n\nUse server fetching for initial content and client fetching for dynamic interactions.",
-    "coverImage": "/next.svg",
+    "title": "Tai Nghe Không Dây Có Thực Sự Thay Đổi Cách Ta Nghe Nhạc",
+    "slug": "ban-nghe-khong-day-co-thuc-su-thay-doi-cach-ta-nghe-nhac",
+    "excerpt": "Thiết bị nghe nhỏ gọn đã làm việc nghe nhạc trở nên liên tục hơn, nhưng cũng thay đổi sự tập trung.",
+    "content": "Sự phổ biến của tai nghe không dây khiến âm nhạc luôn ở bên cạnh chúng ta.\n\nBạn có thể nghe trên đường đi làm, trong phòng tập, hay giữa một khoảng nghỉ ngắn mà không cần chuẩn bị nhiều.\n\nĐổi lại, trải nghiệm nghe cũng dễ bị cắt nhỏ hơn. Cách nghe nhạc sâu sắc có lẽ không biến mất, nhưng nó cần được chủ động tạo ra thay vì tự nhiên xảy đến.",
+    "coverImage": "/music/cover-culture.svg",
     "author": {
       "id": "a3",
-      "name": "Ivy Nguyen",
-      "avatar": "/vercel.svg",
-      "bio": "Teaches frontend architecture and form design."
+      "name": "Thảo Nguyễn",
+      "avatar": "/music/avatar-thao.svg",
+      "bio": "Viết review album và theo dõi xu hướng pop châu Á."
     },
     "category": {
-      "id": "c4",
-      "name": "Advanced",
-      "slug": "advanced",
-      "description": "Production-ready implementation details."
+      "id": "c6",
+      "name": "Văn hóa",
+      "slug": "culture",
+      "description": "Văn hóa nghe nhạc, thói quen nghe và đời sống âm thanh."
     },
     "publishedAt": "2026-03-10T07:30:00.000Z",
-    "tags": ["data-fetching", "ssr", "csr"],
-    "readingTime": 9
+    "tags": ["audio", "culture", "listening"],
+    "readingTime": 7
   }
 ]
-

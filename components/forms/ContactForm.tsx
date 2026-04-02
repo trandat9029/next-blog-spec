@@ -38,7 +38,7 @@ export default function ContactForm() {
     const payload = (await response.json()) as ApiResponse;
 
     if (!response.ok || !payload.success) {
-      const fallback = "Unable to submit the form right now.";
+      const fallback = "Hiện chưa thể gửi biểu mẫu.";
       const firstValidationError =
         "errors" in payload ? payload.errors?.[0]?.message : undefined;
       const message = payload.message ?? fallback;
@@ -58,9 +58,9 @@ export default function ContactForm() {
     >
       <div className="space-y-1.5">
         <label htmlFor="name" className="text-sm font-medium text-slate-700">
-          Name
+          Họ tên
         </label>
-        <Input id="name" placeholder="Your name" {...register("name")} />
+        <Input id="name" placeholder="Tên của bạn" {...register("name")} />
         {errors.name ? (
           <p className="text-sm text-rose-600">{errors.name.message}</p>
         ) : null}
@@ -73,7 +73,7 @@ export default function ContactForm() {
         <Input
           id="email"
           type="email"
-          placeholder="you@example.com"
+          placeholder="ban@example.com"
           {...register("email")}
         />
         {errors.email ? (
@@ -83,9 +83,13 @@ export default function ContactForm() {
 
       <div className="space-y-1.5">
         <label htmlFor="subject" className="text-sm font-medium text-slate-700">
-          Subject
+          Chủ đề
         </label>
-        <Input id="subject" placeholder="What is this about?" {...register("subject")} />
+        <Input
+          id="subject"
+          placeholder="Bạn muốn trao đổi về điều gì?"
+          {...register("subject")}
+        />
         {errors.subject ? (
           <p className="text-sm text-rose-600">{errors.subject.message}</p>
         ) : null}
@@ -93,12 +97,12 @@ export default function ContactForm() {
 
       <div className="space-y-1.5">
         <label htmlFor="message" className="text-sm font-medium text-slate-700">
-          Message
+          Nội dung
         </label>
         <Textarea
           id="message"
           rows={5}
-          placeholder="Write your message..."
+          placeholder="Viết nội dung của bạn..."
           {...register("message")}
         />
         {errors.message ? (
@@ -107,7 +111,7 @@ export default function ContactForm() {
       </div>
 
       <Button type="submit" disabled={isSubmitting}>
-        {isSubmitting ? "Sending..." : "Send message"}
+        {isSubmitting ? "Đang gửi..." : "Gửi tin nhắn"}
       </Button>
     </form>
   );

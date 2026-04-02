@@ -11,7 +11,7 @@ export async function GET(_request: Request, { params }: RouteContext) {
 
   if (!post) {
     return NextResponse.json(
-      { success: false, message: "Post not found" },
+      { success: false, message: "Không tìm thấy bài viết" },
       { status: 404 },
     );
   }

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { format } from "date-fns";
+import { vi } from "date-fns/locale";
 import type { Post } from "@/types";
 import CategoryBadge from "@/components/blog/CategoryBadge";
 import Card from "@/components/ui/Card";
@@ -27,10 +28,10 @@ export default function PostCard({ post }: PostCardProps) {
       <div className="space-y-4 p-5">
         <div className="flex items-center justify-between gap-2 text-xs text-slate-500">
           <CategoryBadge label={post.category.name} slug={post.category.slug} />
-          <span>{post.readingTime} min read</span>
+          <span>{post.readingTime} phút đọc</span>
         </div>
 
-        <h3 className="font-serif text-xl font-semibold leading-tight text-slate-900">
+        <h3 className="font-heading text-xl font-semibold leading-tight text-slate-900">
           <Link href={`/blog/${post.slug}`} className="hover:text-teal-700">
             {post.title}
           </Link>
@@ -41,7 +42,7 @@ export default function PostCard({ post }: PostCardProps) {
         <div className="flex items-center justify-between text-xs text-slate-500">
           <span>{post.author.name}</span>
           <time dateTime={post.publishedAt}>
-            {format(new Date(post.publishedAt), "MMM d, yyyy")}
+            {format(new Date(post.publishedAt), "d MMM yyyy", { locale: vi })}
           </time>
         </div>
       </div>

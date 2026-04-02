@@ -1,0 +1,21 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="48" fill="url(#bg)"/>
+  <circle cx="203" cy="165" r="114" fill="#FCA5A5" fill-opacity="0.16"/>
+  <circle cx="972" cy="170" r="140" fill="#FDE68A" fill-opacity="0.18"/>
+  <path d="M138 620C277 523.333 378.667 475 443 475C507.333 475 607.667 523.333 744 620H138Z" fill="#111827" fill-opacity="0.56"/>
+  <path d="M458 620C594.667 516.667 699.333 465 772 465C844.667 465 950.667 516.667 1090 620H458Z" fill="#0F172A" fill-opacity="0.62"/>
+  <rect x="118" y="104" width="964" height="588" rx="40" fill="#020617" fill-opacity="0.2" stroke="#F8FAFC" stroke-opacity="0.16"/>
+  <path d="M232 565L355 269C363.964 247.428 394.536 247.428 403.5 269L526.5 565H461.5L432.5 488H323.5L295 565H232ZM340.5 442H415L378 345L340.5 442Z" fill="#F8FAFC"/>
+  <rect x="660" y="248" width="41" height="181" rx="20.5" fill="#F8FAFC"/>
+  <rect x="646" y="407" width="69" height="153" rx="34.5" fill="#E11D48"/>
+  <path d="M864 260C864 238.013 881.013 221 902 221H906C926.987 221 944 238.013 944 260V369H864V260Z" fill="#F8FAFC"/>
+  <rect x="834" y="363" width="140" height="30" rx="15" fill="#F8FAFC"/>
+  <path d="M917 393V531C917 551.435 900.435 568 880 568C859.565 568 843 551.435 843 531C843 510.565 859.565 494 880 494C889.604 494 898.353 497.66 904.915 503.669V393H917Z" fill="#F8FAFC"/>
+  <defs>
+    <linearGradient id="bg" x1="84" y1="47" x2="1118" y2="766" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="0.55" stop-color="#7F1D1D"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+</svg>

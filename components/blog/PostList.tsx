@@ -9,7 +9,7 @@ export default async function PostList({ posts }: PostListProps) {
   if (!posts.length) {
     return (
       <div className="rounded-xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">
-        No posts matched this filter.
+        Không có bài viết phù hợp với bộ lọc này.
       </div>
     );
   }
