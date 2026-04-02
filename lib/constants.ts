@@ -9,7 +9,7 @@ function getUrlOrFallback(input: string | undefined, fallback: string) {
 }
 
 export const SITE_NAME =
-  process.env.NEXT_PUBLIC_SITE_NAME ?? "Ghi Chú Âm Thanh";
+  process.env.NEXT_PUBLIC_SITE_NAME ?? "Blog Music";
 
 export const SITE_URL = getUrlOrFallback(
   process.env.NEXT_PUBLIC_SITE_URL,
