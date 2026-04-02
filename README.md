@@ -1,6 +1,6 @@
-Ghi Chú Âm Thanh
+Blog Music
 
-Ghi Chú Âm Thanh là một blog âm nhạc được xây dựng bằng Next.js, tập trung chia sẻ các nội dung như playlist, review album, live session và những câu chuyện xoay quanh văn hóa nghe nhạc hiện đại.
+Blog Music là một blog âm nhạc được xây dựng bằng Next.js, tập trung chia sẻ các nội dung như playlist, review album, live session và những câu chuyện xoay quanh văn hóa nghe nhạc hiện đại.
 
 Dự án hướng đến trải nghiệm đọc gọn gàng, rõ ràng và có cá tính, phù hợp cho một tạp chí âm nhạc cá nhân bằng tiếng Việt.
 
