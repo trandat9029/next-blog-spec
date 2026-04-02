@@ -5,4 +5,5 @@ Ghi Chú Âm Thanh là một blog âm nhạc được xây dựng bằng Next.js
 Dự án hướng đến trải nghiệm đọc gọn gàng, rõ ràng và có cá tính, phù hợp cho một tạp chí âm nhạc cá nhân bằng tiếng Việt.
 
 Demo: https://trandat-pas6v3q1t-trandatft9029-5215s-projects.vercel.app/
+
 Tài liệu mô tả: https://docs.google.com/document/d/1pkAGw4dWnoPDPtcGiiQ4WyGsGw0BqyCI2tfo9JCWo5I/edit?usp=sharing
